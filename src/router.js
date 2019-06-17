@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import App from './App.vue'
 import FullArticle from './views/FullArticle.vue'
+import NewsPage from './views/NewsPage.vue'
 
 Vue.use(Router)
 
@@ -16,8 +17,13 @@ export default new Router({
       component: Home
     },
     {
+      path: '/news',
+      name: 'news',
+      component: NewsPage
+    },
+    {
       path: '/news/:id',
-      name: '/news',
+      name: 'news',
       component: FullArticle
     }
     //{

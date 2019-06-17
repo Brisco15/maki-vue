@@ -20,7 +20,7 @@ const router = new VueRouter({
     component: Home
   },
   {
-    path: '/about/:name',
+    path: '/About/:name',
     name: 'About',
     component: About
   }]

@@ -1,10 +1,7 @@
 <template lang="pug">
   <div id="app">
     router-view
-    .wrapper
-      .row
-        .column-phablet-1-2.column-laptop-1-3.m-b-30(v-for="item in news")
-          Article(:article="item")
+    
   </div>
 </template>
 
@@ -34,14 +31,14 @@
       }
   },
     mounted(){
-      axios.get('http://localhost:4000/articles')
-      .then((data)=>{
-        console.log(data)
-        this.news = data.data.docs
-      })
-      Catch((errors)=>{
-        console.log(errors)
-      })
+      // axios.get('http://localhost:4000/articles')
+      // .then((data)=>{
+      //   console.log(data)
+      //   this.news = data.data.docs
+      // })
+      // .catch((errors)=>{
+      //   console.log(errors)
+      // })
     }
   }
 </script>
