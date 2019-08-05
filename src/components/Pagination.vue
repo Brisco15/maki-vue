@@ -5,7 +5,7 @@
         span(v-if="index == pagination.page") {{index}}
         router-link(
           v-if="index != pagination.page" 
-          :to="{ path: 'news', query: { page: index }}"
+          :to="{ query: { page: index }}"
         ) {{index}}
 </template>
 <script>

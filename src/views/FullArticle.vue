@@ -1,5 +1,6 @@
 <template lang="pug">
   <div class="home">
+   <Breadcrumbs :end_title="article.title"></Breadcrumbs>
    <h1>{{article.title}}</h1>
    <data>{{article.pub_date | formatDate}}</data>
   </div>
@@ -8,12 +9,17 @@
 // @ is an alias to /src
 import FullArticle from '@/views/FullArticle.vue'
 import axios from 'axios'
+import Breadcrumbs from '../components/Breadcrumbs.vue'
+
 
 export default {
   data: function(){
     return {
       article: {}
     }
+  },
+  components: {
+    Breadcrumbs
   },
   mounted(){
     let id = this.$route.params.id;
@@ -27,7 +33,7 @@ export default {
         this.$router.push("/");
       })
   }
-  
+
   
 }
 </script>

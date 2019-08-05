@@ -25,6 +25,11 @@ export default new Router({
       path: '/news/:id',
       name: 'news',
       component: FullArticle
+    },
+    {
+      path: '/order',
+      name: 'order',
+      component: Order
     }
     //{
     //  path: 'about',

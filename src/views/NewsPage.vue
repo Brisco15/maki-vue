@@ -4,9 +4,12 @@
 </template>
 <script>
   import ArticleListing from '../components/ArticleListing.vue'
+  import Breadcrumbs from '../components/Breadcrumbs.vue'
+
   export default{
     components: {
-      ArticleListing
+      ArticleListing,
+      Breadcrumbs
     }
   }
 </script> 
